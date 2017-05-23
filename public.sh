@@ -4,17 +4,18 @@
 # Public script to init a VPS for Scopea Odoo servers
 #####################################################
 
+echo "Updating server and installing git"
 apt update
-apt install git
+apt install git -y
 
-echo "scopea @ framagit password"
-git clone https://scopea@framagit.org/scopea/infra.git
+echo "Clonning infra scripts"
+git clone https://scopeagit@framagit.org/scopea/infra.git
 
-echo "coping files"
+echo "Installing keys for ssh access"
 cp infra/ssh-keys.txt .ssh/authorized_keys
-cp infra/odoo_install_debian.sh .
-cp infra/backup_odoo.sh .
-cp infra/caddy_odoo.sh .
 
-echo "Edits script for configuration before launching them"
+echo "Create config file"
+cp infra/config.sh.template infra/config.sh
+
+echo "Edit infra/config.sh for configuration"
 echo "Done"
