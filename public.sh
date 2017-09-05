@@ -9,7 +9,7 @@ apt update
 apt install git -y
 
 echo "Clonning infra scripts"
-git clone https://scopeagit@framagit.org/scopea/infra.git
+git clone https://framagit.org/scopea/infra.git
 
 echo "Installing keys for ssh access"
 cp infra/ssh-keys.txt .ssh/authorized_keys
