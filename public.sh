@@ -6,7 +6,7 @@
 
 echo "Updating server and installing git"
 apt update
-apt dist-upgrade
+apt dist-upgrade -y
 apt install git -y
 
 echo "Clonning infra scripts"
