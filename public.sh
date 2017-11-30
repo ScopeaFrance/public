@@ -7,7 +7,7 @@
 echo "Updating server and installing git"
 apt update
 apt dist-upgrade -y
-apt install git -y
+apt install git vim -y
 
 echo "Clonning infra scripts"
 git clone https://framagit.org/scopea/infra.git
