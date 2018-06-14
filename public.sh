@@ -6,7 +6,7 @@
 
 echo "Updating server and installing git"
 apt update
-apt dist-upgrade -y
+apt upgrade -y
 apt install git vim -y
 
 echo "Clonning infra scripts"
