@@ -10,7 +10,7 @@ apt upgrade -y
 apt install git vim -y
 
 echo "Clonning infra scripts"
-git clone -b ubuntu https://github.com/ScopeaFrance/infra.git 
+git clone https://github.com/ScopeaFrance/infra.git 
 
 echo "Installing keys for ssh access"
 cp infra/ssh-keys.txt .ssh/authorized_keys
